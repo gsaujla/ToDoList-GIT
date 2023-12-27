@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: #cbc0d3;
+        font-family: 'Barlow', sans-serif;
+        padding-top: 50px;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Raleway' , sans-serif;
+    }
+
+    a, p {
+        color: #212529;
+        text-decoration: none;
+    }
+    .lg{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+    .hello-user{
+        margin-top: 15%;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    .add-task{
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-bottom: 4%;
+
+    }
+    .indiv-task{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        
+    }
+    .th{
+        text-align: center;
+        color: black;
+    }
+    .mtdl{
+        text-align: center;
+        margin-top: 3%;
+        font-size: 32px;
+    }
+    table{
+        margin-left: 2%;
+    }
+
+    .container{
+        max-width: 550px;
+        margin: auto;
+        margin-top: 10rem;
+        background-color: white;
+        border-radius: 10px;
+        -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+
+    }
+    .cont{
+        padding: 20px;
+    }
+    .del-btn{
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        {% block content%}
+        {%endblock content%}
+    </div>
+</body>
+</html>
